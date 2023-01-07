@@ -4,6 +4,7 @@ A script to scrape Jumia Hp laptops
 
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 
 def non_sponsor():
@@ -20,8 +21,9 @@ def non_sponsor():
 
     for name, prices, actual, percent, rating, link in zip(names, price, actual_price, percentage, ratings, links):
         print(
-            f'Name: {name.getText()}\nPrice: {prices.getText()}\nActual Price: {actual.getText()}\nPercentage: {percent.getText()}\nRating: {rating.getText()}\nLink: {link.get("href")}')
+            f'Name: {name.getText()}\nPrice: {prices.getText()}\nActual Price: {actual.getText()}\nPercentage: {percent.getText()}\nRating: {rating.getText()}\nLink: https://www.jumia.com.ng/{link.get("href").replace("/", "")}')
         print('\n')
+
 
 
 if __name__ == '__main__':
