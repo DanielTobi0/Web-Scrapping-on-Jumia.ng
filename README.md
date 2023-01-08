@@ -1,2 +1,2 @@
 # Web-Scrapping 
-This repo contains websites I have scrapped
+This repo contains website I have scrapped
