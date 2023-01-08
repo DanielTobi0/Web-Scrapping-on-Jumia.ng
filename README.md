@@ -1,2 +1,2 @@
-# Web-Scrapping-on-Jumia.ng
-A repo to scrape HP laptop's on Jumia
+# Web-Scrapping 
+This repo contains websites I have scrapped
