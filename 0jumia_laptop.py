@@ -13,7 +13,7 @@ hp = soup.find_all('article', {'class': ['prd _fb _spn c-prd col', 'prd _fb col 
 
 
 def jumia_hp():
-    with open('housing.csv', 'w', encoding='utf8', newline='') as f:
+    with open('hp_laptops.csv', 'w', encoding='utf8', newline='') as f:
         thewriter = writer(f)
         header = ['Name', 'Price', 'old_price', 'link', 'rating', 'percentage']
         thewriter.writerow(header)
